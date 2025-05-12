@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    .hero__title {
+      font-size: 3.5rem;
+    }
+    
+    .hero__subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .highlights__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .about__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .footer__content {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .hero__title {
+      font-size: 4rem;
+    }
+  }
