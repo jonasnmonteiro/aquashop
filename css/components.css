@@ -205,3 +205,311 @@
   .nav__link.active {
     border-bottom: 2px solid var(--primary);
   }
+
+  .checkout-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+      margin: 20px 0px;
+      border-top:5px solid;
+      border-top-color: red ;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #444;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .radio-group label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .finalizar {
+      background-color: #c62828;
+      color: white;
+      border: none;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .finalizar:hover {
+      background-color: #b71c1c;
+    }
+
+    .price {
+      color: #c62828;
+      font-weight: bold;
+    }
+
+    .metodos img {
+      height: 20px;
+      margin: 5px;
+
+     }
+
+    .menu {
+      display: flex;
+      gap: 5px; 
+      align-items: center;
+      margin: 20px 0px;
+    }
+
+    .menu-btn {
+      border: none; border-radius: 5px; 
+      cursor: pointer; transition: background-color  0.2s ease; 
+      background: red; 
+      color: white; 
+      padding: 10px; margin-top: 3px;
+    }
+
+    .menu-btn:hover {
+      background-color: #a30000; /* Um pouco mais claro no hover */
+    }
+
+    .menu-btn:active {
+      background-color: #5c0000; 
+    }
+
+    .checkout-container {
+      box-sizing: border-box;
+      box-shadow: #444;
+      background: #fff;
+    }
+
+    .checkbox-group {
+      margin-bottom: 10px; 
+      display: flex; 
+      gap: 20px; 
+      align-items: center;
+    }
+
+    .checkbox-option {
+      display: flex; 
+      align-items: center;  
+      white-space: nowrap; 
+      gap: 5px; 
+      font-weight: bold; 
+      cursor: pointer
+    }
+
+     .btn-alterar {
+      display: flex;
+      width: 200px;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 10px;
+      font-size: 13px;
+      background-color: #f3f3f3;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .btn-alterar::before {
+      content: "✏️";
+    }
+
+    .btn-alterar:hover {
+      background-color: #e7e7e7;
+    }
+
+    .cep-row {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    
+    .frete-opcao {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px 15px;
+      max-width: 350px;
+      gap: 10px;
+    }
+
+    .frete-opcao input[type="radio"] {
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      border: 3px solid #ccc;
+      border-radius: 50%;
+      outline: none;
+      margin-right: 10px;
+      position: relative;
+    }
+
+    .frete-opcao input[type="radio"]:checked {
+      border-color: #007bff;
+      background-color: #007bff;
+    }
+
+    .logo-pac {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .logo-pac img {
+      width: 30px;
+      height: auto;
+    }
+
+    .frete-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+    }
+
+    .prazo {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .preco {
+      font-weight: bold;
+      font-size: 14px;
+      color: #c33;
+    }
+
+    .observacao {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+      margin-left: 28px;
+    }
+
+        .payment-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 1.4em;
+            font-weight: bold;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .payment-title img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            opacity: 0.8;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .payment-option input[type="radio"] {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .payment-option label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: color 0.2s ease;
+            width: 100%;
+        }
+
+        .payment-option label:hover {
+            color: #3498db;
+        }
+
+
+        .payment-option label img {
+            height: 30px;
+            margin-right: 12px;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .payment-value {
+            margin-top: 25px;
+            text-align: left;
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.4em;
+            border-top: 2px solid #e0e0e0;
+            padding-top: 10px;
+        }
+
+        .payment-option label img.paypal {
+            height: 20px;
+        }
+        .payment-option label img.pix {
+            height: 20px;
+        }
+
+        .payment-option input[type="radio"] {
+            align-self: flex-start;
+            margin-top: 8px;
+        }
+
+        .finalizar-compra {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .finalizar-compra button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .finalizar-compra button:hover {
+            background-color: #c0392b;
+        }
+
+        .finalizar-compra button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5);
+        }

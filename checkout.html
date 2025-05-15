@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo-aquashop.png" alt="AquaShop Logo" class="logo__img">
+        <span class="logo__text">AquaShop</span>
+      </a>
+      
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="produtos.html" class="nav__link">Produtos</a>
+          </li>
+          <li class="nav__item">
+            <a href="guia.html" class="nav__link">Guia</a>
+          </li>
+          <li class="nav__item">
+            <a href="checkout.html" class="nav__link">Carrinho</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+       <div class="checkout-container">
+    
+    <!-- Dados pessoais e entrega -->
+        <div class="card">
+            <div style="display: flex; align-items: center; gap: 5px;">
+                <img src="/aquashop/assets/images/menu-hamburguer.png"  style="height: 13px; width: 10px; " alt="">  
+                <h3>Dados pessoais e de entrega</h3>
+            </div>
+            <hr style="margin-top: 5px;">
+
+            <div class="menu">
+                <p>Já possui cadastro?</p>
+                <button class="menu-btn">Identifique-se</button>
+            </div>
+            <hr>
+
+            <label>Nome completo</label>
+            <input type="text">
+
+            <label>E-mail</label>
+            <input type="email">
+            
+            <div class="input-row" style="display: flex; gap: 16px; margin-bottom: 20px;">
+                <div class="input-group" style="display: flex; flex-direction: column;">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" />
+                </div>
+
+                <div class="input-group" style="display: flex; flex-direction: column;">
+                    <label for="confirm-password">Confirmar Senha</label>
+                    <input id="confirm-password" type="password" />
+                </div>
+            </div>
+            <hr>
+            
+            <div class="checkbox-group">
+                <label class="checkbox-option">
+                    <input type="checkbox" name="person-type" checked />
+                    <span>Pessoa Física</span>
+                </label>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" name="person-type"/>
+                    <span>Pessoa Jurídica</span>
+                </label>
+            </div>
+            <hr>
+
+            <label>CPF</label>
+            <input type="text">
+
+            <label>R.G.</label>
+            <input type="text">
+
+            <label>Sexo</label>
+                <select>
+                <option>Selecione</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Outro</option>
+            </select>
+
+            <label>Data de nascimento</label>
+            <input type="date">
+
+            <label>Celular</label>
+            <input type="text">
+
+            <label>Telefone residencial</label>
+            <input type="text">
+        </div>
+
+    <!-- Forma de envio -->
+    <div class="card">
+      <div class="envio-box" style="margin-top: 3px;">
+        <h3 style="margin-bottom: 7px;">📍 Escolha a forma de envio</h3>
+        <hr>
+        <label class="cep-label" for="cep">CEP</label>
+      </div>
+
+      <div class="cep-row">  
+        <input class="cep-input" type="text" id="cep" value="04018-000">
+        <button class="btn-alterar">Alterar envio</button>
+      </div>
+
+      <form class="frete-container">
+        <label class="frete-opcao selected"> 
+        <input type="radio" name="frete" class="frete-radio" checked>
+      <div class="frete-info">
+        <img style="width: 40%;" src="assets/images/logo-correios.png" alt="Correios">
+        <span>PAC</span>
+      </div>
+      <div class="frete-detalhes">
+        <span class="prazo">3 dias*</span>
+        <span class="preco">R$ 13,70</span>
+      </div>
+    </label>
+
+    <label class="frete-opcao">
+      <input type="radio" name="frete" class="frete-radio">
+      <div class="frete-info">
+        <img style="width: 30%;" src="assets/images/transport.jpeg" alt="Correios">
+        <span>Outra opção</span>
+      </div>
+      <div class="frete-detalhes">
+        <span class="prazo">1 dia*</span>
+        <span class="preco">R$ 23,90</span>
+      </div>
+    </label>
+
+  <div class="observacao">
+    * Dias úteis, após confirmação do pagamento.
+  </div>
+
+
+      <label>Endereço</label>
+      <input type="text" value="Rua Rio Grande">
+
+      <label>Número</label>
+      <input type="text">
+
+      <label>Complemento</label>
+      <input type="text">
+
+      <label>Referência</label>
+      <input type="text">
+
+      <label>Bairro</label>
+      <input type="text" value="Papicu">
+
+      <label>Cidade</label>
+      <input type="text" value="Fortaleza">
+
+      <label>Estado</label>
+      <select>
+        <option selected>Ceará</option>
+        <!-- Outros estados -->
+      </select>
+
+      <label>País</label>
+      <select>
+        <option selected>BRA</option>
+        <!-- Outros países -->
+      </select>
+    </div>
+
+    <!-- Forma de pagamento -->
+    <div class="card">
+        <h3 class="payment-title-card">💳 Escolha a forma de pagamento</h3>
+        <div class="payment-title">
+            <img src="https://cdn-icons-png.flaticon.com/512/2503/2503752.png" alt="Forma de Pagamento">
+        </div>
+        <div class="payment-option">
+            <input type="radio" id="paypal" name="payment-method" value="paypal">
+            <label for="paypal">   
+                <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="" class="paypal">
+                PayPal
+            </label>
+        </div>
+        <div class="payment-option">
+            <input type="radio" id="visa" name="payment-method" value="visa">
+            <label for="visa">
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" class="visa">
+                Visa
+            </label>
+        </div>
+        <div class="payment-option">
+            <input type="radio" id="mastercard" name="payment-method" value="mastercard">
+            <label for="mastercard">
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" class="mastercard">
+                Mastercard
+            </label>
+        </div>
+
+        <div class="payment-value">
+            <span>Valor: R$ 183,70</span>
+        </div>
+        <div class="finalizar-compra">
+            <button>Finalizar compra</button>
+        </div>       
+    </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__copyright">&copy; 2025 AquaShop - Desenvolvido para fins educacionais</p>
+     <!-- <p>Site educativo/informativo sobre uma loja fictícia de aquarismo. Todo o conteúdo apresentado é baseado em informações públicas disponíveis.</p>
+      <p>As imagens e marcas mencionadas são propriedade de seus respectivos detentores. Para uso oficial, consulte:</p>
+      <ul class="official-links">
+        
+      </ul>
+    -->
+      <nav class="footer__nav">
+        <a href="#politica-privacidade" class="footer__link">Política de Privacidade</a>
+        <a href="#termos-uso" class="footer__link">Termos de Uso</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
