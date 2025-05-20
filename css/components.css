@@ -631,6 +631,9 @@
 /* Layout dos accordions com imagem e texto lado a lado */
 /* ESTILOS ESPECÍFICOS PARA O GUIA */
 .accordion__content {
+    display: none;
+}
+input[type="checkbox"]:checked + label + .conteudo {
   display: grid;
   grid-template-columns: 1fr 2fr; /* Imagem 1 parte, texto 2 partes */
   gap: 2rem;
