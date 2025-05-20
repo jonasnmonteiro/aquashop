@@ -631,6 +631,30 @@
 /* Layout dos accordions com imagem e texto lado a lado */
 /* ESTILOS ESPECÍFICOS PARA O GUIA */
 /* CORREÇÃO DOS ACCORDIONS (deve vir após os estilos existentes) */
+.intro_guia {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .texto_intro {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .imagem_intro {
+      flex: 1;
+    }
+
+    .imagem img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
 .accordion__content {
   display: none; /* Esconde o conteúdo inicialmente */
   grid-template-columns: 1fr 2fr;
