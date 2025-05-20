@@ -7,6 +7,12 @@
     --light: #f5f5f5;
     --dark: #1a1a1a;
     --font-primary: 'Segoe UI', system-ui, sans-serif;
+    --spacing-unit: 1rem;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
   }
   
   * {
@@ -31,8 +37,19 @@
     height: auto;
   }
   
+  .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
   .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 var(--spacing-unit);
   }

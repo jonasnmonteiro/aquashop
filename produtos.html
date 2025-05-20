@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AquaShop - Produtos</title>
+  <title>AquaShop - Nossos Produtos</title>
   <link rel="icon" type="image/x-icon" href="assets/images/fav.png">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
@@ -36,70 +36,249 @@
     </nav>
   </header>
 
-  <main class="container">
-    <h1 class="page__title">Nossos Produtos</h1>
-    
-    <section class="category">
-      <h2 class="category__title">Equipamentos</h2>
+  <main class="products-page container">
+    <nav class="breadcrumb" aria-label="Navegação estrutural">
+      <a href="index.html">Home</a> > 
+      <span aria-current="page">Produtos</span>
+    </nav>
+
+    <header class="page__header">
+      <h1 class="page__title">Catálogo Completo</h1>
+      <p class="page__subtitle">Tudo o que você precisa para montagem e manutenção de aquários</p>
+    </header>
+
+    <!-- Seção Equipamentos -->
+    <section class="category" id="equipamentos" aria-labelledby="equipamentos-title">
+      <header class="category__header">
+        <img src="assets/images/categoria-equipamentos.jpg" 
+             alt="Variedade de equipamentos para aquário" 
+             class="category__thumb">
+        <h2 class="category__title" id="equipamentos-title">Equipamentos Profissionais</h2>
+      </header>
+      
       <div class="products__grid">
+        <!-- Bomba Submersa -->
         <article class="product__card">
-          <img src="assets/images/produto-exemplo-01.jpg" alt="Bomba para aquário" width="600" height="600">
-          <h3>Bomba Submersa 500L/h</h3>
-          <p class="product__price">R$ 129,90</p>
+          <div class="product__image-container">
+            <img src="assets/images/bomba-submersa.webp" 
+                 alt="Bomba submersa para aquário 1000L/h com regulagem de fluxo" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Bomba Submersa Premium 1000L/h</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 249,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
         </article>
-            
+
+        <!-- Filtro Externo -->
         <article class="product__card">
-          <img src="1660932124327.webp" alt="Alicate" width="600" height="600" >
-          <h3>Alicate de Corte para conchas e corais</h3>
-          <p class="product__price">R$ 40,00</p>
+          <div class="product__image-container">
+            <img src="assets/images/filtro-externo.webp" 
+                 alt="Filtro externo para aquário com 3 estágios de filtragem" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Filtro Externo Canister 200L</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 699,00</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
         </article>
-            
+
+        <!-- Aquecedor -->
         <article class="product__card">
-          <img src="limpador.jpg" alt="limpador magnético" width="600" height="600" >
-          <h3>Limpador Magnético Mini ( 6mm )</h3>
-          <p class="product__price">R$ 60,00</p>
+          <div class="product__image-container">
+            <img src="assets/images/aquecedor.jpg" 
+                 alt="Aquecedor submersível com termostato digital" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Aquecedor 200W com Termostato</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 159,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
         </article>
-           
+
+        <!-- Iluminação LED -->
         <article class="product__card">
-          <img src="1602602067228.jpg" alt="Filtro de água" width="600" height="600" >
-          <h3>Filtro Sun Sun Hang On HBL-302 350L/H</h3>
-          <p class="product__price">R$ 60,00</p>
+          <div class="product__image-container">
+            <img src="assets/images/iluminacao-led.webp" 
+                 alt="Kit de iluminação LED para aquário plantado" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Iluminação LED 48W RGB</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 429,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
         </article>
-         
-        <article class="product__card">
-          <img src="assets/images/condicionador.jpg" alt="Condicionador de água " width="600" height="600" >
-          <h3>Condicionador de água Para Aquario Peixes (4 unidades)</h3>
-          <p class="product__price">R$ 80,00</p>
-        </article>
-       
-        <article class="product__card">
-          <img src="assets/images/termometro.webp" alt="Termômetro digital para aquário" width="600" height="600">
-          <h3>Termômetro Digital Submersível para Aquário</h3>
-          <p class="product__price">R$ 35,00</p>
-        </article>
-        <!-- Repetir mais cards -->
       </div>
     </section>
-    <br>
-    <br>
-        
-        <center><a href="http://127.0.0.1:5500/aquashop-main/produto2.html" class="button-overlay">Próximo</a></center>
+
+    <!-- Seção Decoração -->
+    <section class="category" id="decoracao" aria-labelledby="decoracao-title">
+      <header class="category__header">
+        <img src="assets/images/categoria-decoracao.jpg" 
+             alt="Exemplos de decorações para aquário" 
+             class="category__thumb">
+        <h2 class="category__title" id="decoracao-title">Decoração Premium</h2>
+      </header>
       
-    <br>
-    <br>
-  
-    <!-- Repetir seções para outras categorias -->
+      <div class="products__grid">
+        <!-- Tronco Natural -->
+        <article class="product__card">
+          <div class="product__image-container">
+            <img src="assets/images/tronco-natural.jpg" 
+                 alt="Tronco natural para aquário tratado termicamente" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Tronco Natural 40cm</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 89,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Conjunto Rochas -->
+        <article class="product__card">
+          <div class="product__image-container">
+            <img src="assets/images/rochas-decorativas.webp" 
+                 alt="Kit com 5 rochas vulcânicas para aquascaping" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Kit Rochas Vulcânicas (5 peças)</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 149,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Navio Decorativo -->
+        <article class="product__card">
+          <div class="product__image-container">
+            <img src="assets/images/navio-decorativo.webp" 
+                 alt="Navio decorativo em resina para aquário marinho" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Navio Decorativo 30cm</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 199,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Substrato Plantado -->
+        <article class="product__card">
+          <div class="product__image-container">
+            <img src="assets/images/substrato-plantado.webp" 
+                 alt="Substrato nutritivo para aquário plantado" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Substrato Plantado 5kg</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 129,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção Medições -->
+    <section class="category" id="medicoes" aria-labelledby="medicoes-title">
+      <header class="category__header">
+        <img src="assets/images/categoria-medicoes.jpg" 
+             alt="Instrumentos de medição para aquário" 
+             class="category__thumb">
+        <h2 class="category__title" id="medicoes-title">Controle e Medições</h2>
+      </header>
+      
+      <div class="products__grid">
+        <!-- Teste Multi-parâmetro -->
+        <article class="product__card">
+          <div class="product__image-container">
+            <img src="assets/images/teste-multiparametro.webp" 
+                 alt="Kit teste para pH, amônia e nitrato" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Teste Multi-parâmetro</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 89,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Termômetro Digital -->
+        <article class="product__card">
+          <div class="product__image-container">
+            <img src="assets/images/termometro-digital.webp" 
+                 alt="Termômetro digital com display externo" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Termômetro Digital LED</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 59,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Medidor TDS -->
+        <article class="product__card">
+          <div class="product__image-container">
+            <img src="assets/images/medidor-tds.webp" 
+                 alt="Medidor digital de sólidos dissolvidos" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Medidor TDS Digital</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 149,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sifão Limpeza -->
+        <article class="product__card">
+          <div class="product__image-container">
+            <img src="assets/images/sifao-limpeza.webp" 
+                 alt="Sifão para limpeza de fundo com regulagem" 
+                 class="product__image">
+          </div>
+          <div class="product__info">
+            <h3 class="product__title">Sifão Profissional 2m</h3>
+            <div class="product__meta">
+              <p class="product__price">R$ 79,90</p>
+              <button class="btn btn--add-cart">Adicionar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__content">
       <p class="footer__copyright">&copy; 2025 AquaShop - Desenvolvido para fins educacionais</p>
-     <!-- <p>Site educativo/informativo sobre uma loja fictícia de aquarismo. Todo o conteúdo apresentado é baseado em informações públicas disponíveis.</p>
-      <p>As imagens e marcas mencionadas são propriedade de seus respectivos detentores. Para uso oficial, consulte:</p>
-      <ul class="official-links">
-        
-      </ul>
-    -->
       <nav class="footer__nav">
         <a href="#politica-privacidade" class="footer__link">Política de Privacidade</a>
         <a href="#termos-uso" class="footer__link">Termos de Uso</a>
