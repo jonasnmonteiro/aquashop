@@ -625,12 +625,7 @@
   background: var(--primary);
 }
 
-/*gabriel guia*/
-/* Adicione estas regras ao seu components.css */
-
-/* Layout dos accordions com imagem e texto lado a lado */
-/* ESTILOS ESPECÍFICOS PARA O GUIA */
-/* CORREÇÃO DOS ACCORDIONS (deve vir após os estilos existentes) */
+/*guia*/
 .intro_guia {
       display: flex;
       align-items: center;
@@ -656,17 +651,16 @@
     }
 
 .accordion__content {
-  display: none; /* Esconde o conteúdo inicialmente */
+  display: none; 
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
   padding: 1.5rem 0;
 }
-
 .accordion__input:checked ~ .accordion__content {
-  display: grid; /* Mostra apenas quando checked */
+  display: grid; 
 }
 
-/* Mantenha os estilos de imagem/texto que já adicionamos */
+
 .accordion__content img {
   width: 100%;
   max-height: 250px;
@@ -674,7 +668,7 @@
   border-radius: 8px;
 }
 
-/* Estilo visual do label quando aberto/fechado */
+
 .accordion__label {
   display: block;
   padding: 1rem;
@@ -704,9 +698,4 @@
 .accordion__input:checked ~ .accordion__content {
   display: grid !important;
 }
-/* Responsivo */
-@media (max-width: 768px) {
-  .accordion__content {
-    grid-template-columns: 1fr;
-  }
 }
