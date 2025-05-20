@@ -624,3 +624,56 @@
 .btn--add-cart:hover {
   background: var(--primary);
 }
+
+/*gabriel guia*/
+/* Adicione estas regras ao seu components.css */
+
+/* Layout dos accordions com imagem e texto lado a lado */
+.accordion__content {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  align-items: flex-start;
+}
+
+.accordion__content img {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+  align-self: flex-start; /* Mantém o alinhamento no topo */
+}
+
+.accordion__content p {
+  width: 60%;
+  margin: 0; /* Remove margens padrão do parágrafo */
+}
+
+/* Responsividade - em telas pequenas volta ao layout vertical */
+@media (max-width: 768px) {
+  .accordion__content {
+    flex-direction: column;
+  }
+  
+  .accordion__content img,
+  .accordion__content p {
+    width: 100%;
+  }
+}
+
+/* Melhorias visuais opcionais */
+.accordion__label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+  transition: background-color 0.2s ease;
+}
+
+.accordion__label:hover {
+  background-color: #e6f2ff;
+}
+
+.accordion__input:checked ~ .accordion__label {
+  background-color: var(--primary);
+  color: white;
+}
