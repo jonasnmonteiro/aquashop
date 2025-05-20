@@ -657,9 +657,7 @@ input[type="checkbox"]:checked + label + .conteudo {
 }
 
 /* Reset de estilos conflitantes */
-.accordion__input:checked ~ .accordion__content {
-  display: grid !important; /* Força o grid layout */
-  max-height: none !important;
+
 }
 
 /* Responsivo */
